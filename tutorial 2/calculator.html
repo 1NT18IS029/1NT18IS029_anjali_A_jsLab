@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <script src="jv.js"></script>
+      <link rel="stylesheet" href="cs.css">
+   </head>
+
+   <body>
+        <div style="text-align: center;">
+            <h1 >SIMPLE CALCULATOR</h1>
+        </div>
+        <table border="1" align="center" style="width: 75%; height: 75%;" >
+         <tr>
+            <td colspan="3"><input type="text" id="result"/></td>
+
+            <td><input type="button" class="b" value="C" onclick="clr()"/> </td>
+         </tr>
+         <tr>
+          
+            <td><input type="button" class="b" value="1" onclick="dis('1')"/> </td>
+            <td><input type="button" class="b" value="2" onclick="dis('2')"/> </td>
+            <td><input type="button" class="b" value="3" onclick="dis('3')"/> </td>
+            <td><input type="button" class="b" value="/" onclick="dis('/')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" class="b" value="4" onclick="dis('4')"/> </td>
+            <td><input type="button" class="b" value="5" onclick="dis('5')"/> </td>
+            <td><input type="button" class="b" value="6" onclick="dis('6')"/> </td>
+            <td><input type="button" value="-" class="b" onclick="dis('-')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" class="b" value="7" onclick="dis('7')"/> </td>
+            <td><input type="button" class="b" value="8" onclick="dis('8')"/> </td>
+            <td><input type="button" class="b" value="9" onclick="dis('9')"/> </td>
+            <td><input type="button" class="b" value="+" onclick="dis('+')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" class="b" value="." onclick="dis('.')"/> </td>
+            <td><input type="button" class="b" value="0" onclick="dis('0')"/> </td>
+       
+            <td><input type="button" class="b" value="=" onclick="solve()"/> </td>
+            <td><input type="button" class="b" value="*" onclick="dis('*')"/> </td>
+         </tr>
+      </table>
+   </body>
+</html>

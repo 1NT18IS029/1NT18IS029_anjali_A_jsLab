@@ -1,0 +1,46 @@
+body{
+    background-image: linear-gradient(to left,rgb(122, 130, 146),rgb(115, 173, 226));
+}
+.randomize {
+    background-color: rgb(0, 0, 0); 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .randomize {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 40px;
+  }
+  
+  .randomize:hover {
+    background-color:rgb(1, 23, 71);
+    color: white;
+  }
+
+  
+  .button2:hover {
+    background-color:rgb(1, 23, 71);
+    color: white;
+  }
+
+  p{
+    font-size: 175%;
+    font-family: cursive;
+    text-align: center;
+    width: 700px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: auto;
+    background-color: powderblue;
+ 
+  }
