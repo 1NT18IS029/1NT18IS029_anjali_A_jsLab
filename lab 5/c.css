@@ -1,0 +1,39 @@
+body{
+    background-image: linear-gradient(to left,rgb(122, 130, 146),rgb(115, 173, 226));
+}
+.button {
+    background-color: rgb(0, 0, 0); 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 25%;
+  }
+  
+  .button1:hover {
+    background-color:rgb(1, 23, 71);
+    color: white;
+  }
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+  }
+  
+  .button2:hover {
+    background-color:rgb(1, 23, 71);
+    color: white;
+  }

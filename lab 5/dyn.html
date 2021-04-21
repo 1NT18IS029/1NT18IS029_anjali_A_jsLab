@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>lab 5-dynamic creation</title>
+        <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+    </head>
+    <body style="text-align: center;">
+    <h3>DYNAMIC CREATION OF ELEMENT</h3>
+    <p>DRAG THE PICTURE TO CHANGE</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCG3_mc5R10DemT9XWEfVZYox8wqlPAlKSUA&usqp=CAU" ondrag="change()" id="imgClickAndChange" height="50%" width="50%"/>
+    <br><BR><BR>
+    <button onclick="myFunc()">lets know about DHONI</button>
+    </body>
+    <script>
+        function myFunc()
+        {
+            let d=document.createElement('p');
+            d.innerText="Mahendra Singh Dhoni (born 7 July 1981), commonly known as M. S. Dhoni and *Mahi*, is a cricket player and was the former captain of the Indian cricket team. Dhoni is a right-handed batsman. He is known as the greatest captain of all time, having achieved more success than any other captain in the history of cricket."
+            document.body.appendChild(d)
+        }
+
+        function change() {
+
+        if (document.getElementById("imgClickAndChange").src == "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCG3_mc5R10DemT9XWEfVZYox8wqlPAlKSUA&usqp=CAU") 
+            {
+            document.getElementById("imgClickAndChange").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvIs6ux9ziW0EDjBmjAvdddh8Hy5luXt0LKw&usqp=CAU";
+            }
+        else 
+            {
+            document.getElementById("imgClickAndChange").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCG3_mc5R10DemT9XWEfVZYox8wqlPAlKSUA&usqp=CAU";
+            }
+        }
+        </script>
+</html>
