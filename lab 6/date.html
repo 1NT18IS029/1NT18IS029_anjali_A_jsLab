@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>date object</title>
+<style>
+#date1{ 
+width:250px;
+height:50px;
+padding-top:20px;
+padding-left: 50px;
+font-size: 20px;
+color:black;
+text-align: left;
+}
+.div1{
+    
+color:black;
+background-color:yellow;
+width: 75%;
+height: 25%;
+font-size: 120%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: bold;
+}
+
+</style>
+<script type="text/javascript">
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display()',refresh)
+}
+function display(){
+let today=new Date();
+var display=today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();
+display=display+" "+today.getHours()+':'+today.getMinutes()+':'+today.getSeconds();
+document.getElementById("date1").innerHTML=display;
+display_c();
+}
+</script>
+</head>
+<body onload="display()">
+<div class="div1">
+Date and Time:
+<p id="date1"></p>
+</div>
+</body>
+</html>

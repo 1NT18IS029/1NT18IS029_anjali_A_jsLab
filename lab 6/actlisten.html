@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTION LISTENER PAGE</title>
+</head>
+<body>
+    <style>
+    #first {
+        width: 500px;
+        height: 500px;
+        background: black;
+        position: relative;
+      }
+      #first #second {
+        width: 50%;
+        height: 50%;
+        background: grey;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #first #second #third {
+        width: 50%;
+        height: 50%;
+        background: blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #first #second #third #fourth {
+        width: 50%;
+        height: 50%;
+        background: powderblue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <div id="first">
+        <div id="second">
+            <div id="third">
+                <div id="fourth">
+                </div>
+            </div>
+        </div>
+    </div>
+      <script>
+          const b1 = document.getElementById("first");
+          const b2 = document.getElementById("second");
+          const b3 = document.getElementById("third");
+          const b4 = document.getElementById("fourth");
+          let flag =false;
+         b1.addEventListener('mouseenter',()=>{console.log("INSIDE BLACK BOX!!!!")});
+         b2.addEventListener('mouseenter',()=>{console.log("INSIDE GREY BOX!!!")});
+         b3.addEventListener('mouseenter',()=>{console.log("INSIDE BLUE BOX!!!")});
+         b4.addEventListener('mouseenter',()=>{alert("IN THE FINAL BOX !!!")});
+      </script>
+</body>
+</html>
