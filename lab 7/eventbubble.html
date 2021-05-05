@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>event bubbling</title>
+    <style type="text/css">
+    .divv{
+        display: table-cell;
+        border:1px solid black;
+        padding:100px;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+    }
+    .spn{
+        display: table-cell;
+        border:1px solid black;
+        padding: 50px;;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+    }
+    .btn{
+        display: table-cell;
+        border:1px solid black;
+        padding:20x;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+    }
+    </style>
+</head>
+<body>
+    <h1>EVENT BUBBLING</h1>
+    <div class="divv" onclick="alert('RED CLICKED')" style="background-color:red;"> 
+        <span class="spn" onclick="alert('ORANGE CLICKED')" style="background-color:orange;"> 
+            <input type="button" class="btn" onclick="alert('WHITE CLICKED')" style="background-color:white;"> 
+    </span>
+    </div>
+</body>
+</html>

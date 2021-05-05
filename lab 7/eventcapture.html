@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#mydiv2 {
+  background-color: orange;
+  padding: 50px;
+  border: 1px solid black;
+}
+#mydiv1 {
+  background-color: red;
+  padding: 100px;
+  border: 1px solid black;
+}
+ #btn {
+  background-color: white; 
+  border: 1px solid black;
+  padding: 20px;
+}
+</style>
+</head>
+<body style="text-align: center;">
+    <h1>EVENT CAPTURING</h1>
+<div id="mydiv1">
+    <div id="mydiv2">
+  <input type="button" id="btn" style="width: 100%;"></p>
+  </div>
+</div>
+<script>
+document.getElementById("btn").addEventListener("click", function() {
+  alert("You clicked the white element!");
+}, true);
+document.getElementById("mydiv2").addEventListener("click", function() {
+  alert("You clicked the orange element!");
+}, true);
+document.getElementById("mydiv1").addEventListener("click", function() {
+  alert("You clicked the red element!");
+}, true);
+</script>
+</body>
+</html>
